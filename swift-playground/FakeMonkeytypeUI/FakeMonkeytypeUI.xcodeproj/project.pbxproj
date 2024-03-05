@@ -12,6 +12,11 @@
 		B47CB9FB2B971BE10035E92C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47CB9FA2B971BE10035E92C /* ContentView.swift */; };
 		B47CB9FD2B971BE20035E92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47CB9FC2B971BE20035E92C /* Assets.xcassets */; };
 		B47CBA002B971BE20035E92C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47CB9FF2B971BE20035E92C /* Preview Assets.xcassets */; };
+		B47CBA092B9729A90035E92C /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47CBA082B9729A90035E92C /* ARKit.framework */; };
+		B47CBA0B2B9729AE0035E92C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47CBA0A2B9729AE0035E92C /* SceneKit.framework */; };
+		B47CBA0D2B9729BA0035E92C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47CBA0C2B9729BA0035E92C /* SwiftUI.framework */; };
+		B47CBA0F2B972C4E0035E92C /* TypingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47CBA0E2B972C4E0035E92C /* TypingTestView.swift */; };
+		B47CBA112B972FCC0035E92C /* TypingTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47CBA102B972FCC0035E92C /* TypingTestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		B47CB9FC2B971BE20035E92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47CB9FF2B971BE20035E92C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B47CBA012B971BE20035E92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47CBA082B9729A90035E92C /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		B47CBA0A2B9729AE0035E92C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		B47CBA0C2B9729BA0035E92C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B47CBA0E2B972C4E0035E92C /* TypingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTestView.swift; sourceTree = "<group>"; };
+		B47CBA102B972FCC0035E92C /* TypingTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47CBA092B9729A90035E92C /* ARKit.framework in Frameworks */,
+				B47CBA0D2B9729BA0035E92C /* SwiftUI.framework in Frameworks */,
+				B47CBA0B2B9729AE0035E92C /* SceneKit.framework in Frameworks */,
 				B47CB9F72B971BE10035E92C /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +55,7 @@
 				B47CB9F32B971BE10035E92C /* FakeMonkeytypeUI */,
 				B47CB9F42B971BE10035E92C /* Packages */,
 				B47CB9F22B971BE10035E92C /* Products */,
+				B47CBA072B9729A80035E92C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				B47CB9F82B971BE10035E92C /* FakeMonkeytypeUIApp.swift */,
+				B47CBA102B972FCC0035E92C /* TypingTestModel.swift */,
+				B47CBA0E2B972C4E0035E92C /* TypingTestView.swift */,
 				B47CB9FA2B971BE10035E92C /* ContentView.swift */,
 				B47CB9FC2B971BE20035E92C /* Assets.xcassets */,
 				B47CBA012B971BE20035E92C /* Info.plist */,
@@ -79,6 +95,16 @@
 				B47CB9FF2B971BE20035E92C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B47CBA072B9729A80035E92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B47CBA0C2B9729BA0035E92C /* SwiftUI.framework */,
+				B47CBA0A2B9729AE0035E92C /* SceneKit.framework */,
+				B47CBA082B9729A90035E92C /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47CBA112B972FCC0035E92C /* TypingTestModel.swift in Sources */,
 				B47CB9FB2B971BE10035E92C /* ContentView.swift in Sources */,
 				B47CB9F92B971BE10035E92C /* FakeMonkeytypeUIApp.swift in Sources */,
+				B47CBA0F2B972C4E0035E92C /* TypingTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
